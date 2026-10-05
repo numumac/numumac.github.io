@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MY PORTAL｜Learning & Life Hub</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,
+               "Hiragino Kaku Gothic ProN", "Yu Gothic",
+               Meiryo, sans-serif;
+  background: #f4f7fb;
+  color: #263238;
+}
+
+header {
+  background: linear-gradient(135deg, #173f73, #3276ad);
+  color: white;
+  padding: 65px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin: 12px 0 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 1150px;
+  margin: auto;
+  padding: 45px 20px 80px;
+}
+
+.intro {
+  background: white;
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-bottom: 45px;
+  line-height: 1.8;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}
+
+h2 {
+  color: #173f73;
+  border-bottom: 3px solid #d6e3f0;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.card {
+  display: block;
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  text-decoration: none;
+  color: #263238;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  border-top: 5px solid #2d6ca8;
+  transition: 0.2s;
+  min-height: 175px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.13);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  color: #173f73;
+  font-size: 1.25rem;
+}
+
+.card p {
+  margin: 0;
+  color: #687680;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.ready {
+  display: inline-block;
+  margin-top: 14px;
+  background: #e8f3eb;
+  color: #287642;
+  border-radius: 12px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+}
+
+.planned {
+  display: inline-block;
+  margin-top: 14px;
+  background: #edf1f5;
+  color: #687680;
+  border-radius: 12px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+}
+
+footer {
+  text-align: center;
+  color: #7b8790;
+  padding: 30px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>MY PORTAL</h1>
+  <p>Personal Learning &amp; Life Hub</p>
+</header>
+
+<main>
+
+<div class="intro">
+  <strong>学習・趣味・日常管理の総合ポータル</strong><br>
+  資格試験、語学、趣味、研究、所有機材など、
+  日々蓄積していく情報とアプリを一か所から利用するための
+  個人用ホームページです。
+</div>
+
+
+<h2>📚 資格・語学学習</h2>
+
+<div class="cards">
+
+  <a class="card" href="https://numumac.github.io/eiken/">
+    <div class="icon">🇬🇧</div>
+    <h3>英検</h3>
+    <p>
+      基本単語・熟語、1級重要語彙、長文・リスニング、
+      英作文、面接・スピーキング
+    </p>
+    <span class="ready">公開中</span>
+  </a>
+
+  <a class="card" href="https://numumac.github.io/Gyoseishoshi/">
+    <div class="icon">⚖️</div>
+    <h3>行政書士</h3>
+    <p>
+      行政法、民法、憲法、商法・会社法、
+      基礎知識、過去問、小説教材
+    </p>
+    <span class="ready">公開中</span>
+  </a>
+
+  <a class="card"
+     href="https://numumac.github.io/Kaijidairishi/index.html">
+    <div class="icon">⚓</div>
+    <h3>海事代理士</h3>
+    <p>
+      20科目の過去問準拠問題、重要条文、
+      筆記試験・口述試験対策
+    </p>
+    <span class="ready">公開中</span>
+  </a>
+
+  <a class="card" href="#">
+    <div class="icon">📡</div>
+    <h3>電気通信主任技術者</h3>
+    <p>
+      伝送交換設備、過去問分析、重要項目、
+      正誤問題、穴埋め問題、用語集
+    </p>
+    <span class="planned">作成予定</span>
+  </a>
+
+  <a class="card" href="#">
+    <div class="icon">⚡</div>
+    <h3>電験三種</h3>
+    <p>
+      理論、電力、機械、法規、
+      基礎事項と問題演習
+    </p>
+    <span class="planned">作成予定</span>
+  </a>
+
+</div>
+
+
+<h2>🔬 趣味・研究</h2>
+
+<div class="cards">
+
+  <a class="card" href="#">
+    <div class="icon">📻</div>
+    <h3>アマチュア無線</h3>
+    <p>
+      無線機・周辺機器台帳、アンテナ、
+      免許・申請、交信記録、実験・工作
+    </p>
+    <span class="planned">作成予定</span>
+  </a>
+
+  <a class="card" href="#">
+    <div class="icon">🌍</div>
+    <h3>GeoGuessr</h3>
+    <p>
+      国別攻略、道路、文字、標識、国旗、
+      ドメイン、プレイ記録・反省
+    </p>
+    <span class="planned">作成予定</span>
+  </a>
+
+  <a class="card" href="#">
+    <div class="icon">🎵</div>
+    <h3>音楽</h3>
+    <p>
+      ピアノ、フルート、クラシックギター、
+      声楽、楽曲・練習記録
+    </p>
+    <span class="planned">作成予定</span>
+  </a>
+
+  <a class="card" href="#">
+    <div class="icon">⚫</div>
+    <h3>囲碁</h3>
+    <p>
+      定石、布石、手筋、詰碁、
+      対局記録、棋譜、反省ノート
+    </p>
+    <span class="planned">作成予定</span>
+  </a>
+
+</div>
+
+
+<h2>🗂 日常・管理</h2>
+
+<div class="cards">
+
+  <a class="card" href="#">
+    <div class="icon">📦</div>
+    <h3>所有品・機材管理</h3>
+    <p>
+      電子機器、工具、趣味用品などの
+      所有状況、保管場所、状態を管理
+    </p>
+    <span class="planned">作成予定</span>
+  </a>
+
+  <a class="card" href="#">
+    <div class="icon">📖</div>
+    <h3>資料・リンク集</h3>
+    <p>
+      よく利用するWebサイト、
+      学習資料、参考資料への入口
+    </p>
+    <span class="planned">作成予定</span>
+  </a>
+
+</div>
+
+</main>
+
+<footer>
+  MY PORTAL｜Personal Learning &amp; Life Hub
+</footer>
+
+</body>
+</html>
